@@ -2,21 +2,20 @@
 Testing for my_module.py
 """
 
-import my_module as mym
+import My_module as mym
 import pytest
 
 def test_times_table():
-	"""
-	Function for testing times_tabel(arg)
-	"""
-	table = mym.times_table(5)
-	assert table[0,0] = 0
-	assert table[1,1] = 1
-        assert table[2,2] = 4
-        assert table[3,3] = 9
-        assert table[4,4] = 16
-        assert table[5,5] = 25
-        assert table[2,3] = 6
-        assert table[3,2] = 6
-
+        """
+        Function for testing times_tabel(arg)
+        """
+        table = mym.times_table(5)
+        assert float(table[0,0]) == float(0)
+        assert float(table[1,1]) == float(1)
+        assert float(table[2,2]) == float(4)
+        assert float(table[3,3]) == float(9)
+        assert float(table[4,4]) == float(16)
+        assert float(table[5,5]) == float(25)
+        assert float(table[2,3]) == float(6)
+        assert float(table[3,2]) == float(6)
 
